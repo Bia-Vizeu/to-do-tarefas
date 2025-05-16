@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Tarefas</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="navbar">
+    <a href="index.html">Início</a>
+    <a href="usuarios.html">Usuários</a>
+    <a href="tarefas.html">Tarefas</a>
+  </div>
+
+  <div class="container">
+    <h2>Cadastro de Tarefa</h2>
+    <form id="tarefaForm">
+      <input type="text" id="descricao" placeholder="Descrição da tarefa" required>
+      <input type="text" id="setor" placeholder="Setor" required>
+
+      <select id="usuarioId" required>
+        <option value="">Selecione o usuário</option>
+      </select>
+
+      <select id="prioridade" required>
+        <option value="">Selecione a prioridade</option>
+        <option value="baixa">Baixa</option>
+        <option value="média">Média</option>
+        <option value="alta">Alta</option>
+      </select>
+
+      <button type="submit">Cadastrar</button>
+    </form>
+
+    <h2>Lista de Tarefas</h2>
+    <div id="listaTarefas" class="card"></div>
+  </div>
+
+  <script src="js/tarefas.js"></script>
+</body>
+</html>
